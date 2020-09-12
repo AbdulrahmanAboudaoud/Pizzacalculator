@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pizzacalculator</title>
+
+</head>
+<body>
+<h1>fake domino's</h1>
+
+
+<script type="text/javascript">
+	
+alert("pizza kosten")
+alert("small = €5,")
+alert("medium = €6,")
+alert("large = €7,")
+
+small = prompt("hoeveel smaal pizaa's wilt u ?")
+medium = prompt("hoeveel medium pizza's wilt u ?")
+large = prompt("hoeveel large pizza's wilt u ?")
+
+document.write(" Uw bestelling is :<br> " )
+aantaltotal = Number(small) + Number(medium) + Number(large)
+
+document.write(small +"small pizza's <br>")
+document.write(medium +"medium pizza's <br>")
+document.write(large +"large pizza's <br>")
+document.write(aantaltotal + "totaal pizza's <br>")
+
+
+
+const prijssmall = 5
+const prijsmedium = 6
+const prijslarge = 7 
+
+small = (small * prijssmall);
+medium = (medium * prijsmedium);
+large = (large * prijslarge);
+
+const prijs = Number(small) + Number(medium) + Number(large)
+
+document.write("totale is : €" + prijs)
+
+
+document.write("<br> Bedankt voor u bestelling!! <br>")
+
+/*abdulrahman aboudaoud - 20A1- pizzacalculator*/
+</script>
+</body>
+</html>
