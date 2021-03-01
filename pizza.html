@@ -5,46 +5,53 @@
 
 </head>
 <body>
-<h1>fake domino's</h1>
+	<h1>fake domino's</h1>
 
 
-<script type="text/javascript">
+	<script type="text/javascript">
 	
-alert("pizza kosten")
-alert("small = €5,")
-alert("medium = €6,")
-alert("large = €7,")
+			alert("pizza kosten")
+			alert("small = €5,")
+			alert("medium = €6,")
+			alert("large = €7,")
 
-small = prompt("hoeveel smaal pizaa's wilt u ?")
-medium = prompt("hoeveel medium pizza's wilt u ?")
-large = prompt("hoeveel large pizza's wilt u ?")
+			small = prompt("hoeveel smaal pizaa's wilt u ?")
+			alert("kosten tot nu zijn" + Number(small) * 5 + "€" )
 
-document.write(" Uw bestelling is :<br> " )
-aantaltotal = Number(small) + Number(medium) + Number(large)
+			medium = prompt("hoeveel medium pizza's wilt u ?")
+			alert ("kosten tot nu zijn " + (Number(small) * 5 + Number(medium) * 6) + "€")
 
-document.write(small +"small pizza's <br>")
-document.write(medium +"medium pizza's <br>")
-document.write(large +"large pizza's <br>")
-document.write(aantaltotal + "totaal pizza's <br>")
+			large = prompt("hoeveel large pizza's wilt u ?")
+			alert ("kosten tot nu zijn " + (Number(small) * 5 + Number(medium) * 6 + Number(large) * 7) +"€")
 
+			aantaltotal = Number(small) + Number(medium) + Number(large);
 
+			document.write(" Uw bestelling is :<br> " )
 
-const prijssmall = 5
-const prijsmedium = 6
-const prijslarge = 7 
-
-small = (small * prijssmall);
-medium = (medium * prijsmedium);
-large = (large * prijslarge);
-
-const prijs = Number(small) + Number(medium) + Number(large)
-
-document.write("totale is : €" + prijs)
+			document.write(small +"small pizza's" + ":" + Number(small) * 5 + "€" +"<br>" )
+			document.write(medium + "medium pizza's" + ":" + Number(medium) * 6 + "€" +"<br>" )
+			document.write(large +  "large pizza's" + ":" +Number(large) * 7 + "€" +"<br>") 
+			document.write(aantaltotal + "totaal pizza's <br>")
 
 
-document.write("<br> Bedankt voor u bestelling!! <br>")
 
-/*abdulrahman aboudaoud - 20A1- pizzacalculator*/
-</script>
+			const Prijssmall = 5
+			const Prijsmedium = 6
+			const Prijslarge = 7 
+
+			small = (small * Prijssmall);
+			medium = (medium * Prijsmedium);
+			large = (large * Prijslarge);
+
+			const Prijs = Number(small) + Number(medium) + Number(large)
+
+			document.write("totale is : €" + Prijs)
+
+
+			document.write("<br> Bedankt voor u bestelling!! <br>")
+
+			/*abdulrahman aboudaoud - 20A1- pizzacalculator*/
+	</script>
+	
 </body>
 </html>
